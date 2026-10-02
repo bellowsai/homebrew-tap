@@ -1,0 +1,17 @@
+# Installs the cask on a clean Mac, the way a person would, on every change.
+name: test
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  install:
+    runs-on: macos-latest
+    steps:
+      - name: Tap
+        run: brew tap bellowsai/tap
+      - name: Audit
+        run: brew audit --cask --online bellowsai/tap/bellows
+      - name: Install
+        run: brew install --cask bellowsai/tap/bellows
+      - name: Installed
+        run: test -d /Applications/Bellows.app && defaults read /Applications/Bellows.app/Contents/Info.plist CFBundleShortVersionString
