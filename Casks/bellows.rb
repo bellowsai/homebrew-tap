@@ -1,6 +1,6 @@
 cask "bellows" do
-  version "1.13.0"
-  sha256 "c295724565f9c57f0b8eecdcb6f58c780578e728e73c57e5af133dc056337ca5"
+  version "1.14.0"
+  sha256 "d5cdbdbfae26d8ec4a1cc70cceef4ba0fcba638320a9edc4ddbcf6ce39d62668"
 
   url "https://github.com/bellowsai/bellows-releases/releases/download/v#{version}/Bellows-#{version}-arm64.dmg"
   name "Bellows"
