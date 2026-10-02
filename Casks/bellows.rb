@@ -2,8 +2,7 @@ cask "bellows" do
   version "1.13.0"
   sha256 "c295724565f9c57f0b8eecdcb6f58c780578e728e73c57e5af133dc056337ca5"
 
-  url "https://github.com/bellowsai/bellows-releases/releases/download/v#{version}/Bellows-#{version}-arm64.dmg",
-      verified: "github.com/bellowsai/bellows-releases/"
+  url "https://github.com/bellowsai/bellows-releases/releases/download/v#{version}/Bellows-#{version}-arm64.dmg"
   name "Bellows"
   desc "Desktop workspace for coding agents, with team policy and an audit trail"
   homepage "https://bellowsai.app/"
