@@ -6,6 +6,10 @@ on:
 jobs:
   install:
     runs-on: macos-latest
+    env:
+      # brew audit --online calls the GitHub API; anonymously, a shared runner
+      # hits the 60-an-hour limit before it reaches the cask.
+      HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Tap
         run: brew tap bellowsai/tap
