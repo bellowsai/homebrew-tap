@@ -1,9 +1,9 @@
 cask "bellows" do
-  version "1.20.0"
+  version "1.21.0"
   arch arm: "arm64", intel: "x64"
 
-  sha256 arm:   "666e896bcf1428d565236631bcf4afa37e449d2c204e61301fc0b78a1e687805",
-         intel: "786a9808fc2eb0e263c6badc6dc18d149a65686cf992e10ebdf5b298a90498e1"
+  sha256 arm:   "5795fc51cae9d3fefc88667149f5f4b5e9ef70519993d3a1204c35082ba9fb0c",
+         intel: "fcbf30cc8b538aca698ce816ce6089e446ab7cfd0a473dfde05ca8fd2984fc67"
 
   url "https://github.com/bellowsai/bellows-releases/releases/download/v#{version}/Bellows-#{version}-#{arch}.dmg"
   name "Bellows"
